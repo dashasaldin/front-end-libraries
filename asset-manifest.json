@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/front-end-libraries/static/css/main.287a53e0.chunk.css",
+    "main.js": "/front-end-libraries/static/js/main.2f110c8c.chunk.js",
+    "main.js.map": "/front-end-libraries/static/js/main.2f110c8c.chunk.js.map",
+    "runtime-main.js": "/front-end-libraries/static/js/runtime-main.7eea74f6.js",
+    "runtime-main.js.map": "/front-end-libraries/static/js/runtime-main.7eea74f6.js.map",
+    "static/js/2.729d2417.chunk.js": "/front-end-libraries/static/js/2.729d2417.chunk.js",
+    "static/js/2.729d2417.chunk.js.map": "/front-end-libraries/static/js/2.729d2417.chunk.js.map",
+    "index.html": "/front-end-libraries/index.html",
+    "precache-manifest.1040b12295b4ec9f4fd55e6543f56cd8.js": "/front-end-libraries/precache-manifest.1040b12295b4ec9f4fd55e6543f56cd8.js",
+    "service-worker.js": "/front-end-libraries/service-worker.js",
+    "static/css/main.287a53e0.chunk.css.map": "/front-end-libraries/static/css/main.287a53e0.chunk.css.map",
+    "static/js/2.729d2417.chunk.js.LICENSE.txt": "/front-end-libraries/static/js/2.729d2417.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7eea74f6.js",
+    "static/js/2.729d2417.chunk.js",
+    "static/css/main.287a53e0.chunk.css",
+    "static/js/main.2f110c8c.chunk.js"
+  ]
+}
