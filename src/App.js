@@ -1,24 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState, useEffect} from 'react';
 import './App.css';
 
+
 function App() {
+  const [quote, setQuote] = useState(null);
+
+  useEffect(()=> {
+    if(!quote) {
+      getQuote();
+    }
+  }, [quote]);
+
+  const getQuote = async () => {
+    const json = await fetch("https://api.quotable.io/random");
+    const result = await json.json();
+    setQuote(result);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <div id="quote-box">
+      {quote && (
+        <>
+      <div id="text">
+        <i class="fa fa-quote-left"> </i>
+        <span className="quote-text">{quote.content}</span>
+      </div>
+      <div id="author">
+        {quote.author}
+      </div></>)}
+      <div className="buttons">
+        <a className="button" id="tweet-quote" href="https://twitter.com/intent/tweet" >
+          <i className="fa fa-twitter"></i>
         </a>
-      </header>
+        <a className="button" onClick={getQuote} href="#" id="new-quote">New quote</a>
+      </div>
     </div>
   );
 }
