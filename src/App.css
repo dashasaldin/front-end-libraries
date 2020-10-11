@@ -2,8 +2,10 @@ div {
   position: relative;
 }
 body {
-  background-color: darkslateblue;
   font-family: 'Montserrat', sans-serif;
+}
+.quote-page-container {
+  background-color: darkslateblue;
   display: flex;
   align-items: center;
   height: 100vh;

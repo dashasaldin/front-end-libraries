@@ -18,9 +18,10 @@ function App() {
   }
 
   return (
-    <div id="quote-box">
-      {quote && (
-        <>
+    <div className="quote-page-container"> 
+      <div id="quote-box">
+        {quote && (
+          <>
       <div id="text">
         <i class="fa fa-quote-left"> </i>
         <span className="quote-text">{quote.content}</span>
@@ -28,11 +29,12 @@ function App() {
       <div id="author">
         {quote.author}
       </div></>)}
-      <div className="buttons">
-        <a className="button" id="tweet-quote" href="https://twitter.com/intent/tweet" >
-          <i className="fa fa-twitter"></i>
-        </a>
-        <a className="button" onClick={getQuote} href="#" id="new-quote">New quote</a>
+        <div className="buttons">
+          <a className="button" id="tweet-quote" href="https://twitter.com/intent/tweet" >
+            <i className="fa fa-twitter"></i>
+          </a>
+          <a className="button" onClick={getQuote} href="#" id="new-quote">New quote</a>
+        </div>
       </div>
     </div>
   );
