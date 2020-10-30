@@ -1,12 +1,11 @@
-body {
-    background-color: darkslateblue;
-}
 .container {
     display: flexbox;
     text-align: center;
     color: white;
     font-size: 30px;
     padding-top: 100px;
+    background-color: darkslateblue;
+    height: 100vh;
 }
 .title{
     font-size: 50px;
